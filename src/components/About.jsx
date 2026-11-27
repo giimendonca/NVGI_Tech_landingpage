@@ -1,0 +1,8 @@
+import { ArrowUpRight, Fingerprint, Workflow, Sparkles } from "lucide-react";
+import Reveal from "./Reveal.jsx";
+
+function About(){
+ return <section className="about" id="sobre"><div className="about-bg-orb"/><div className="section about-inner"><Reveal><span className="kicker">03 / NOSSA ESSÊNCIA</span><h2>Tecnologia boa é aquela<br/>que faz sentido <span className="hero-gradient">para você.</span></h2></Reveal><div className="about-layout"><Reveal delay={.1}><p className="about-copy">A NVGI Tech nasceu de uma ideia simples: tecnologia não deve ser complicada, distante ou feita só para alguns. Ela deve aproximar possibilidades, resolver problemas e abrir caminhos.</p><p className="about-copy about-copy-secondary">Por isso, cada projeto começa ouvindo. Entendemos pessoas, negócios e necessidades antes de pensar em linhas de código. O resultado precisa funcionar no mundo real e fazer sentido para quem vai usar.</p><a className="about-cta" href="#contato">Conte pra gente o que você precisa <ArrowUpRight size={17}/></a></Reveal><Reveal delay={.2}><div className="principles"><div className="principle"><span className="principle-icon"><Fingerprint/></span><div><b>Feito para pessoas</b><small>Escuta antes da solução.</small></div><span className="principle-no">01</span></div><div className="principle"><span className="principle-icon"><Workflow/></span><div><b>Simples por intenção</b><small>Complexidade nos bastidores.</small></div><span className="principle-no">02</span></div><div className="principle"><span className="principle-icon"><Sparkles/></span><div><b>Pronto para evoluir</b><small>Ideias que crescem junto com você.</small></div><span className="principle-no">03</span></div></div></Reveal></div></div></section>;
+}
+
+export default About;
