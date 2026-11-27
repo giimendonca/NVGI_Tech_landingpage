@@ -70,3 +70,37 @@
 @keyframes lightBreath{0%,100%{opacity:.7;transform:scale(.96)}50%{opacity:1;transform:scale(1.06)}}
 @media(max-width:760px){.hero-light-left{width:110vw;height:110vw;left:-65vw;top:-60vw}.hero-light-right{width:110vw;height:110vw;right:-65vw;bottom:-50vw}.official-logo{width:min(72vw,360px)}.service-grid{background:linear-gradient(180deg,rgba(11,29,53,.9),rgba(8,23,45,.9))}.service-card{background:transparent!important}.contact-art{width:175px;height:175px;right:7%;bottom:18px}.contact-art-core{width:92px;height:92px;gap:8px}.contact-art-core svg{width:28px}.contact-art-core span{font-size:6px}.contact-art-ring.ring-one{inset:15px}.contact-art-ring.ring-two{inset:-4px}.contact-art-orbit-dot{top:19px;right:28px;width:7px;height:7px}}
 @media(prefers-reduced-motion:reduce){.hero-light,.contact-art-core{animation:none}}
+
+
+/* Marca oficial no cabeçalho e no rodapé */
+.brand-symbol{display:block;width:29px;height:29px;object-fit:contain;filter:drop-shadow(0 0 10px rgba(25,217,210,.16))}
+.footer .brand-symbol{width:25px;height:25px}
+
+/* Elemento de contato: conexões que convergem para uma ideia */
+.contact-art{width:320px;height:260px;right:7%;top:21%;border:0;display:grid;place-items:center;opacity:.92}
+.contact-art-ring,.contact-art-orbit-dot{display:none!important}
+.contact-art-core{position:relative;z-index:2;width:142px;height:142px}
+.network-line{position:absolute;z-index:1;left:50%;top:50%;height:1px;width:116px;transform-origin:left center;background:linear-gradient(90deg,rgba(35,213,218,.72),rgba(112,100,237,.08));box-shadow:0 0 12px rgba(35,213,218,.18)}
+.network-line.line-a{transform:rotate(205deg)}
+.network-line.line-b{transform:rotate(-25deg)}
+.network-line.line-c{transform:rotate(90deg);width:91px}
+.network-node{position:absolute;z-index:3;width:12px;height:12px;border:1px solid #62e8e2;border-radius:50%;background:#0b2440;box-shadow:0 0 18px rgba(42,220,218,.5);animation:nodePulse 3.8s ease-in-out infinite}
+.network-node.node-a{left:35px;top:65px}
+.network-node.node-b{right:35px;top:65px;animation-delay:1.2s}
+.network-node.node-c{left:calc(50% - 6px);bottom:5px;animation-delay:2.1s}
+.contact-art-core{box-shadow:0 0 55px rgba(31,157,205,.16),inset 0 0 35px rgba(55,98,206,.12)}
+@keyframes nodePulse{0%,100%{transform:scale(.85);opacity:.65}50%{transform:scale(1.2);opacity:1}}
+@media(max-width:760px){
+ .brand-symbol{width:25px;height:25px}
+ .contact-art{width:185px;height:150px;right:5%;bottom:20px;top:auto;opacity:.42}
+ .contact-art-core{width:86px;height:86px;gap:7px}
+ .contact-art-core svg{width:26px}
+ .contact-art-core span{font-size:5px}
+ .network-line{width:68px}
+ .network-line.line-c{width:54px}
+ .network-node{width:8px;height:8px}
+ .network-node.node-a{left:17px;top:38px}
+ .network-node.node-b{right:17px;top:38px}
+ .network-node.node-c{left:calc(50% - 4px);bottom:0}
+}
+@media(prefers-reduced-motion:reduce){.network-node{animation:none}}
