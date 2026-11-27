@@ -48,7 +48,7 @@ function Hero() {
     </div>
     <div className="hero-emblem" aria-hidden="true">
       <div className="emblem-halo halo-one"/><div className="emblem-halo halo-two"/><div className="emblem-halo halo-three"/>
-      {/* LOGO OFICIAL: quando estiver pronta, inserir aqui <img src="/assets/logo-nvgi.svg" alt="NVGI Tech" className="official-logo" />. O símbolo atual foi removido intencionalmente. */}
+      {<img src="/assets/logo/nvgi-simbolo.svg" alt="NVGI Tech" className="official-logo" />}
       <div className="emblem-orbit orbit-one"/><div className="emblem-orbit orbit-two"/>
       <div className="float-chip chip-code"><Code2 size={17}/> <span>IDEIAS → CÓDIGO</span></div>
       <div className="float-chip chip-spark"><Sparkles size={17}/> <span>FEITO PARA VOCÊ</span></div>
