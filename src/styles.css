@@ -111,3 +111,6 @@
 .screen-zap:after{width:280px;height:280px;border-color:rgba(25,217,210,.2)}
 @media(max-width:760px){.zap-real-preview{height:310px;max-height:calc(100% - 48px);border-radius:18px;padding:4px}.zap-real-preview img{border-radius:14px}}
 @media(prefers-reduced-motion:reduce){.zap-real-preview{transform:none}}
+
+/* CTA do header: mantém contraste mesmo com a regra geral dos links do menu */
+.main-nav>a.nav-contact:hover,.main-nav>a.nav-contact:focus-visible{color:#04111e;background:rgba(25,217,210,.96);text-shadow:none;}
